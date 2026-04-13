@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shop - FigureVault</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+
+<header class="inner-header">
+  <div class="container">
+        <h1>Catalogue</h1>
+        <nav>
+            <a href="index.html" class="btn-primary">← Back to Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="product.html"> Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">🛒 Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+
+    </div>
+</header>
+
+<section class="products container">
+<a href="product.html?name=JinkArcane&price=1500&model=arcane_-_jinx.glb" class="product-link">
+  <div class="product-card">
+    <model-viewer src="arcane_-_jinx.glb" auto-rotate camera-controls></model-viewer>
+    <h3> Jinx Arcane Figurine</h3>
+    <p>R 1500.00</p>
+    <button onclick="event.stopPropagation();addToCart('Jinx',1500)">Add to Cart</button>
+  </div>
+  </a>
+
+  <a href="product.html?name=NarutoSage&price=1200&model=naruto_sage.glb" class="product-link">
+  <div class="product-card">
+    <model-viewer src="naruto_sage.glb" auto-rotate camera-controls></model-viewer>
+    <h3>Naruto Sage Figurine</h3>
+    <p>R 1200.00</p>
+    <button onclick="event.stopPropagation();addToCart('Naruto Sage',1200)">Add to Cart</button>
+  </div>
+  </a>
+
+  <a href="product.html?name=SasukeUchiha&price=1400&model=sasuke_uchiha.glb" class="product-link">
+  <div class="product-card">
+    <model-viewer src="sasuke_uchiha.glb" auto-rotate camera-controls></model-viewer>
+    <h3>Sasuke Uchiha Figurine</h3>
+    <p>R 1400.00</p>
+    <button onclick="event.stopPropagation();addToCart('Susuke Uchiha',1400)">Add to Cart</button>
+  </div>
+</a>
+
+<a href="product.html?name=Mulan&price=1100&model=mulan_3d_model.glb" class="product-link">
+  <div class="product-card">
+    <model-viewer src="mulan_3d_model.glb" auto-rotate camera-controls></model-viewer>
+    <h3>Mulan Figurine</h3>
+    <p>R 1100.00</p>
+    <button onclick="event.stopPropagation();addToCart('Mulan',1100)">Add to Cart</button>
+  </div>
+  </a>
+
+  <a href="product.html?name=Gwen&price=1800&model=spider-gwen_-_across_the_spider-verse.glb" class="product-link">
+<div class="product-card">
+    <model-viewer src="spider-gwen_-_across_the_spider-verse.glb" auto-rotate camera-controls></model-viewer>
+    <h3>Gwen Spider-verse Figurine</h3>
+    <p>R 1800.00</p>
+    <button onclick="event.stopPropagation();addToCart('Gwen',1800)">Add to Cart</button>
+  </div>
+  </a>
+ 
+  <a href="product.html?name=Spiderman&price=1700&model=spider-_man_cosmic_invasion.glb" class="product-link">
+  <div class="product-card">
+    <model-viewer src="spider-_man_cosmic_invasion.glb" auto-rotate camera-controls></model-viewer>
+    <h3>Spiderman Figurine</h3>
+    <p>R 1700.00</p>
+    <button onclick="event.stopPropagation();addToCart('Spiderman',1700)">Add to Cart</button>
+  </div>
+  </a>
+
+  <a href="product.html?name=ThorHammer&price=1000&model=marvel_thors_hammer_mjolnir.glb" class="product-link">
+  <div class="product-card">
+    <model-viewer src="marvel_thors_hammer_mjolnir.glb" auto-rotate camera-controls></model-viewer>
+    <h3>Thor Hammer</h3>
+    <p>R 1000.00</p>
+    <button onclick="event.stopPropagation();addToCart('Thor Hammer',1000)">Add to Cart</button>
+  </div>
+  </a>
+
+  <a href="product.html?name=TheSpot&price=2000&model=the_spot_spiderverse_rigged.glb" class="product-link">
+<div class="product-card">
+    <model-viewer src="the_spot_spiderverse_rigged.glb" auto-rotate camera-controls></model-viewer>
+    <h3>The Spot Figurine</h3>
+    <p>R 2000.00</p>
+    <button onclick="event.stopPropagation();addToCart('The Spot',2000)">Add to Cart</button>
+  </div>
+  </a>
+
+  <a href="product.html?name=Megatron&price=1800&model=megatron_tf5.glb" class="product-link">
+<div class="product-card">
+    <model-viewer src="megatron_tf5.glb" auto-rotate camera-controls></model-viewer>
+    <h3>Megatron Figurine</h3>
+    <p>R 1800.00</p>
+    <button onclick="event.stopPropagation();addToCart('Megatron',1800)">Add to Cart</button>
+  </div>
+  </a>
+
+  <a href="product.html?name=OptimusPrime&price=2000&model=transformers_5_optimus_prime.glb" class="product-link">
+<div class="product-card">
+    <model-viewer src="transformers_5_optimus_prime.glb" auto-rotate camera-controls></model-viewer>
+    <h3>Optimus Prime Figurine</h3>
+    <p>R 2000.00</p>
+    <button onclick="event.stopPropagation();addToCart('Optimus Prime',2000)">Add to Cart</button>
+  </div>
+  </a>
+
+  <a href="product.html?name=Bumblebee&price=1700&model=transformers_bumblebee.glb" class="product-link">
+<div class="product-card">
+    <model-viewer src="transformers_bumblebee.glb" auto-rotate camera-controls></model-viewer>
+    <h3>Bumblebee Figurine</h3>
+    <p>R 1700.00</p>
+    <button onclick="event.stopPropagation();addToCart('Bumblebee',1700)">Add to Cart</button>
+  </div>
+  </a>
+
+  <a href="product.html?name=Deadpool&price=1500&model=deadpool_movie_model.glb" class="product-link">
+<div class="product-card">
+    <model-viewer src="deadpool_movie_model.glb" auto-rotate camera-controls></model-viewer>
+    <h3>Deadpool Figurine</h3>
+    <p>R 1500.00</p>
+    <button onclick="event.stopPropagation();addToCart('Deadpool',1500)">Add to Cart</button>
+  </div>
+  </a>
+
+  <a href="product.html?name=Mel&price=1800&model=mel_arcane.glb" class="product-link">
+<div class="product-card">
+    <model-viewer src="mel_arcane.glb" auto-rotate camera-controls>
+</model-viewer>
+    <h3>Mel Figurine</h3>
+    <p>R 1800.00</p>
+    <button onclick="event.stopPropagation();addToCart('Mel',1800)">Add to Cart</button>
+  </div>
+  </a>
+
+  <a href="product.html?name=TargaryenFlag&price=1000&model=stylized_dragon_flag.glb" class="product-link">
+<div class="product-card">
+    <model-viewer src="stylized_dragon_flag.glb" auto-rotate camera-controls></model-viewer>
+    <h3>House of Targaryen Flag Figurine</h3>
+    <p>R 1000.00</p>
+    <button onclick="event.stopPropagation();addToCart('Targaryen Flag',1000)">Add to Cart</button>
+  </div>
+  </a>
+
+  <a href="product.html?name=KratosGodOfWar&price=1500&model=kratos_model_gow_1_god_of_war_1.glb" class="product-link">
+<div class="product-card">
+    <model-viewer src="kratos_model_gow_1_god_of_war_1.glb" auto-rotate camera-controls></model-viewer>
+    <h3>Kratos God Of War Figurine</h3>
+    <p>R 1200.00</p>
+    <button onclick="event.stopPropagation();addToCart('Kratos God Of War',1200)">Add to Cart</button>
+  </div>
+  </a>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>

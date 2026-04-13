@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart - FigureVault</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="inner-header">
+    <div class="container">
+         <h1>Your Cart</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html" class="btn-primary"> Back to Shop</a>
+            <a href="product.html"> Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">🛒 Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+
+    </div>
+</header>
+
+<div class="container">
+  <ul id="cart-items"></ul>
+  <h2 id="total"></h2>
+</div>
+
+<a href="checkout.html">
+  <button>Proceed to Checkout</button>
+</a>
+
+<script src="js/script.js"></script>
+<script>
+function getCart() {
+  return JSON.parse(localStorage.getItem("cart")) || [];
+}
+
+function displayCart() {
+  const cart = getCart();
+  const cartItemsDiv = document.getElementById("cart-items");
+  const totalDiv = document.getElementById("cart-total");
+
+  cartItemsDiv.innerHTML = "";
+  let total = 0;
+
+  cart.forEach((item, index) => {
+    total += item.price;
+
+    cartItemsDiv.innerHTML += `
+      <div class="cart-item">
+        <p>${item.name} - R ${item.price}</p>
+        <button onclick="removeItem(${index})">Remove</button>
+      </div>
+    `;
+  });
+
+  totalDiv.textContent = "Total: R " + total;
+}
+
+// ❌ Remove item
+function removeItem(index) {
+  let cart = getCart();
+  cart.splice(index, 1);
+  localStorage.setItem("cart", JSON.stringify(cart));
+  displayCart();
+}
+
+// Load cart on page open
+displayCart();
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout - FigureVault</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="inner-header">
+    <div class="container">
+        <h1>Checkout</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="product.html"> Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          <a href="cart.html">🛒 Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+
+    </div>
+  
+</header>
+
+<div class="container">
+  <form id="checkout-form">
+    <input type="text" placeholder="Full Name" required><br>
+    <input type="text" placeholder="Address" required><br>
+    <input type="text" placeholder="City" required><br>
+    <input type="text" placeholder="Card Number" required><br>
+
+    <button type="submit">Place Order</button>
+  </form>
+</div>
+
+<script>
+document.getElementById("checkout-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  localStorage.removeItem("cart"); // clear cart
+  window.location.href = "confirmation.html";
+});
+</script>
+
+</body>
+</html>

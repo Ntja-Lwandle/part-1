@@ -3,9 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FigureVault - Premium Superhero Figurines</title>
+      <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
 </head>
 <body>
-    welcome!!1
+<header>
+    <div class="container">
+        <h1>FigureVault</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="product.html"> Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">🛒 Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+
+    </div>
+</header>
+
+ <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <h2>Collect Your Favorite Heroes in Stunning 3D</h2>
+        <p>Explore exclusive figurines with interactive 3D previews and premium craftsmanship.</p>
+        <a href="shop.html" class="btn-primary">Shop Now</a>
+      </div>
+    </section>
+
+    <section class="products container" aria-label="Product Listings">
+       <a href="product.html?name=Megatronl&price=1800&model=megatron_tf5.glb" class="product-link">
+      <div class="product-card" tabindex="0">
+        <model-viewer
+          src="megatron_tf5.glb"
+          alt="Megatron Figurine"
+          auto-rotate
+          camera-controls
+          shadow-intensity="1"
+          interaction-prompt="hover"
+          loading="lazy">
+        </model-viewer>
+        <h3>Megatron  Figurine</h3>
+        <p class="price">R 1800.00</p>
+        <button onclick="event.stopPropagation();addToCart('Megatron Figurine', 59.99)">Add to Cart</button>
+      </div>
+      </a>
+
+      <a href="product.html?name=OptimusPrime&price=2000&model=transformers_5_optimus_prime.glb" class="product-link">
+      <div class="product-card" tabindex="0">
+        <model-viewer
+          src="transformers_5_optimus_prime.glb"
+          alt="Optimus Figurine"
+          auto-rotate
+          camera-controls
+          shadow-intensity="1"
+          interaction-prompt="hover"
+          loading="lazy">
+        </model-viewer>
+        <h3>Optimus Prime  Figurine</h3>
+        <p class="price">R 2000.00</p>
+        <button onclick="event.stopPropagation();addToCart('Optimus Prime  Figurine', 49.99)">Add to Cart</button>
+      </div>
+      </a>
+
+
+<a href="product.html?name=Bumblebee&price=1700&model=transformers_bumblebee.glb" class="product-link">
+ <div class="product-card" tabindex="0">
+        <model-viewer
+          src="transformers_bumblebee.glb"
+          alt="Bumblebee Figurine"
+          auto-rotate
+          camera-controls
+          shadow-intensity="1"
+          interaction-prompt="hover"
+          loading="lazy">
+        </model-viewer>
+        <h3>Bumblebee  Figurine</h3>
+        <p class="price">R 1700.00</p>
+        <button onclick="event.stopPropagation();addToCart('Speed Hero Figurine', 49.99)">Add to Cart</button>
+      </div>
+      </a>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 HeroVault. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+
 </body>
 </html>

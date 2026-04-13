@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product - FigureVault</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+
+<header class="inner-header">
+    <div class="container">
+        <h1>Products</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html" class="btn-primary">← Back to Shop</a>
+            <a href="product.html"> Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">🛒 Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+
+    </div>
+</header>
+<div class="container product-page">
+
+  <div class="product-left">
+   <model-viewer id="product-model"
+  auto-rotate
+  camera-controls
+  exposure="1.2"
+  shadow-intensity="1"
+  environment-image="neutral">
+ </model-viewer>
+  </div>
+
+  <div class="product-right">
+    <h2 id="product-name"></h2>
+    <p id="product-description">Premium high-detail collectible.</p>
+    <h3 id="product-price"></h3>
+
+    <button id="add-to-cart-btn">Add to Cart</button>
+  </div>
+
+</div>
+
+
+<script src="js/script.js"></script>
+<script>
+const params = new URLSearchParams(window.location.search);
+
+let name = params.get("name");
+let price = params.get("price");
+let model = params.get("model");
+
+// Fallback (default product)
+if (!name || !price || !model) {
+  name = "Megatron Figurine";
+  price = 1800;
+  model = "megatron_tf5.glb";
+}
+
+// Set product details
+document.getElementById("product-name").textContent = name;
+document.getElementById("product-price").textContent = "R " + price;
+document.getElementById("product-model").src = model;
+
+// Add to cart
+document.getElementById("add-to-cart-btn").onclick = function() {
+  addToCart(name, parseFloat(price));
+};
+</script>
+</body>
+</html>
