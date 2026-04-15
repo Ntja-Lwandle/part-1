@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Product - FigureVault</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+ 
 </head>
 <body>
 
@@ -49,30 +48,6 @@
 </div>
 
 
-<script src="js/script.js"></script>
-<script>
-const params = new URLSearchParams(window.location.search);
 
-let name = params.get("name");
-let price = params.get("price");
-let model = params.get("model");
-
-// Fallback (default product)
-if (!name || !price || !model) {
-  name = "Megatron Figurine";
-  price = 1800;
-  model = "megatron_tf5.glb";
-}
-
-// Set product details
-document.getElementById("product-name").textContent = name;
-document.getElementById("product-price").textContent = "R " + price;
-document.getElementById("product-model").src = model;
-
-// Add to cart
-document.getElementById("add-to-cart-btn").onclick = function() {
-  addToCart(name, parseFloat(price));
-};
-</script>
 </body>
 </html>
