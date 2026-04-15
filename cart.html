@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Cart - FigureVault</title>
-  <link rel="stylesheet" href="css/styles.css">
+
 </head>
 <body>
 
@@ -31,44 +31,5 @@
   <button>Proceed to Checkout</button>
 </a>
 
-<script src="js/script.js"></script>
-<script>
-function getCart() {
-  return JSON.parse(localStorage.getItem("cart")) || [];
-}
-
-function displayCart() {
-  const cart = getCart();
-  const cartItemsDiv = document.getElementById("cart-items");
-  const totalDiv = document.getElementById("cart-total");
-
-  cartItemsDiv.innerHTML = "";
-  let total = 0;
-
-  cart.forEach((item, index) => {
-    total += item.price;
-
-    cartItemsDiv.innerHTML += `
-      <div class="cart-item">
-        <p>${item.name} - R ${item.price}</p>
-        <button onclick="removeItem(${index})">Remove</button>
-      </div>
-    `;
-  });
-
-  totalDiv.textContent = "Total: R " + total;
-}
-
-// ❌ Remove item
-function removeItem(index) {
-  let cart = getCart();
-  cart.splice(index, 1);
-  localStorage.setItem("cart", JSON.stringify(cart));
-  displayCart();
-}
-
-// Load cart on page open
-displayCart();
-</script>
 </body>
 </html>
