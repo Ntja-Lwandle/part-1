@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Checkout - FigureVault</title>
-  <link rel="stylesheet" href="css/styles.css">
+ 
 </head>
 <body>
 
@@ -34,14 +34,7 @@
   </form>
 </div>
 
-<script>
-document.getElementById("checkout-form").addEventListener("submit", function(e) {
-  e.preventDefault();
 
-  localStorage.removeItem("cart"); // clear cart
-  window.location.href = "confirmation.html";
-});
-</script>
 
 </body>
 </html>
