@@ -53,7 +53,18 @@ It includes a working shopping cart system and a checkout page.
 -Real payment intergration
 -Admin Product Panel
 
-*Acknowledgements
+*ACKNOWLEDGEMENTS
 This project was Built as part of learning web development.
 
- 
+ *REFERENCECES 
+ W3Schools (n.d.) HTML & CSS Tutorial. Available at: https://www.w3schools.com (Accessed: 10 April 2026).
+Mozilla Developer Network (n.d.) HTML & CSS Documentation. Available at: https://developer.mozilla.org (Accessed: 10 April 2026).
+freeCodeCamp (n.d.) Web Development Tutorials. Available at: https://www.freecodecamp.org (Accessed: 10 April 2026).
+Unsplash (n.d.) Free Stock Images. Available at: https://www.unsplash.com (Accessed: 8 April 2026).
+Pexels (n.d.) Free Stock Photos. Available at: https://www.pexels.com (Accessed: 9 April 2026).
+Pixabay (n.d.) Free Images and Videos. Available at: https://www.pixabay.com (Accessed: 9 April 2026).
+Sketchfab (n.d.) 3D Models and Viewer. Available at: https://sketchfab.com (Accessed: 8 April 2026).
+MakerWorld (n.d.) Download Free 3D Models. Available at: https://makerworld.com (Accessed: 9 April 2026).
+ChatGPT (2026) Response to query on website design, hosting and resources. Available at: https://chat.openai.com (Accessed: 9 April 2026).
+
+
