@@ -304,14 +304,21 @@ footer {
 }
 
 /* RESPONSIVE */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+
+  .product-page {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin-left: 10px;
+    font-size: 0.9rem;
+  }
+
   .hero-content h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
-  .btn-primary {
-    padding: 12px 24px;
-    font-size: 1rem;
-  }
+
 }
 
 
