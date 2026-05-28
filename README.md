@@ -1,70 +1,175 @@
-MY E-COMMERCE WEBSITE
+FigureVault – E-Commerce Figurine Website
 
-This is a simple e-commerce website built using HTML, CSS, and JavaScript.
-It includes a working shopping cart system and a checkout page.
+Project Overview
+FigureVault is a modern e-commerce website designed for collectors and enthusiasts of anime, pop culture, fantasy, and superhero figurines. The platform provides users with a visually engaging online shopping experience where they can browse, explore, and purchase collectible items.
+The website was developed as part of a web development project proposal and focuses on responsive design, user experience, and modern front-end technologies.
 
-*FEATURES:
-1.) Home Page
-2.) Shop Page (catalogue)
-3.) Products Page (Provides more info on the selected model)
-4.) About Page (Provides in-depth information about the website and its goals)
-5.) Contact Page (For enquiry purposes)
-6.) Cart Page ( You can add models to cart, remove models from cart and Has auto-calculated total price)
+Website Goals
+The main goals of the website are:
+* Increase brand visibility
+* Create an engaging online shopping experience
+* Improve customer interaction and accessibility
+* Generate online sales
+* Provide a modern and responsive e-commerce platform
 
- *TECHNOLOGIES USED:
- 1.) Visual Studio Code
- 2.) HTML
- 3.) CSS
- 4.) JavaScript
- 5.) LocalStorage API
+Features & Functionality
+Website Pages
+* Homepage
+* Product Catalogue
+* Product Detail Pages
+* Contact Page
+* Shopping Cart Page
 
- *PROJECT STRUCTURE:
- 1.) FOLDERS:
-    -JS
-    -IMAGES
-    -CSS
-2.) FILES:
-   -index.html
-   -shop.html
-   -products.html
-   -about.html
-   -contact.html
-   -cart.html
-   -checkout.html
-   -confirmation.html
-   -styles.css
-   -script.js
-*HOW IT WORKS
--Products are added to a cart using Javascript.
--Cart data is stored in the browser usinf Localstorage.
--The cart updates dynamically without refreshing the page
--Checkout page shows final order summary before placing an order
+Core Features
+* Responsive design
+* Product listings
+* Navigation menu
+* Search and filtering functionality
+* Shopping cart system
+* Interactive buttons and animations
+* Mobile-friendly layout
 
-*HOW TO RUN THE PROJECT
-1.) Downlaod or clone the Respitory
+Design & User Experience
+The website follows a modern cinematic aesthetic inspired by gaming and superhero-themed interfaces.
 
-*AUTHOR
--Lwandle Ntja (student)
--With the help of Guardian
--Mpho Ntja (Software Developer)
+Design Elements
+* Dark mode interface
+* Black, purple, and gold colour palette
+* Glowing UI effects
+* Responsive layouts
+* Structured typography
 
-*FUTURE IMPROVEMENTS:
--User login system
--Real payment intergration
--Admin Product Panel
+Typography
+The project uses the Montserrat font family to create a clean and premium appearance.
+css
+font-family: 'Montserrat', sans-serif;
 
-*ACKNOWLEDGEMENTS
-This project was Built as part of learning web development.
+Typography style:
+* Modern
+* Cinematic
+* Gaming-inspired
+* Premium dark-mode UI
 
- *REFERENCECES 
- W3Schools (n.d.) HTML & CSS Tutorial. Available at: https://www.w3schools.com (Accessed: 10 April 2026).
-Mozilla Developer Network (n.d.) HTML & CSS Documentation. Available at: https://developer.mozilla.org (Accessed: 10 April 2026).
-freeCodeCamp (n.d.) Web Development Tutorials. Available at: https://www.freecodecamp.org (Accessed: 10 April 2026).
-Unsplash (n.d.) Free Stock Images. Available at: https://www.unsplash.com (Accessed: 8 April 2026).
-Pexels (n.d.) Free Stock Photos. Available at: https://www.pexels.com (Accessed: 9 April 2026).
-Pixabay (n.d.) Free Images and Videos. Available at: https://www.pixabay.com (Accessed: 9 April 2026).
-Sketchfab (n.d.) 3D Models and Viewer. Available at: https://sketchfab.com (Accessed: 8 April 2026).
-MakerWorld (n.d.) Download Free 3D Models. Available at: https://makerworld.com (Accessed: 9 April 2026).
-ChatGPT (2026) Response to query on website design, hosting and resources. Available at: https://chat.openai.com (Accessed: 9 April 2026).
+Technologies Used
+Front-End
+* HTML5
+* CSS3
+* JavaScript
 
+Design Tools & Resources
+* Wireframe.cc
+* Sketchfab
+* MakerWorld
+* Unsplash
+* Pexels
+* Pixabay
 
+Technical Requirements
+Infrastructure & Hosting
+The website requires reliable hosting infrastructure including:
+* Web hosting
+* Cloud storage
+* Database systems
+* Domain management
+
+Suggested hosting providers:
+* Hostinger
+* Bluehost
+* Afrihost
+
+Suggested domain:
+www.FigureVault.co.za
+
+Performance & Accessibility
+The website is optimized for:
+* Fast loading speeds
+* Responsive layouts
+* Mobile compatibility
+* Readable typography
+* Smooth navigation
+
+Security & Compliance
+Security measures include:
+* SSL certificates
+* Secure authentication systems
+* Secure payment processing
+* Data protection practices
+
+Functional Integrations
+Planned integrations include:
+* Shopping cart system
+* Payment gateway integration
+* Search and filtering systems
+* Admin dashboard
+* User account management
+
+Ongoing Maintenance
+Maintenance tasks include:
+* Bug fixes
+* Security updates
+* Performance monitoring
+* Website backups
+* Content updates
+
+Project Timeline
+ Date           Milestone                            
+8 April 2026   Business Proposal Completion         
+9 April 2026   Project Planning & File Organisation 
+10 April 2026  Website Design Phase                 
+11 April 2026  Front-End Development                
+12 April 2026  Functional Features Integration      
+13 April 2026  Testing & Debugging                  
+14 April 2026  Final Website Completion             
+
+Budget Estimate
+Development Costs
+* Product listings
+* User accounts
+* Cart & checkout
+* Admin dashboard
+* Payment integration
+* Search/filter systems
+
+Estimated:
+R185K – R550K
+
+Hosting & Infrastructure
+Estimated monthly costs:
+R460 – R1,8K
+
+Maintenance Costs
+Estimated maintenance:
+R9,2K – R37K
+
+Estimated Total
+R300K – R1 Million
+
+Folder Structure
+
+index.html
+products.html
+contact.html
+cart.html
+css/
+ *style.css
+js/
+*script.js
+models/
+
+GitHub Repository
+Repository Link:
+https://github.com/Ntja-Lwandle/part-1
+
+ References
+* W3Schools – HTML & CSS Tutorials
+* Mozilla Developer Network (MDN)
+* freeCodeCamp
+* Unsplash
+* Pexels
+* Pixabay
+* Sketchfab
+* MakerWorld
+
+Author
+Developed by Lwandle Lupuwana
+Academic Project – FigureVault E-Commerce Website
