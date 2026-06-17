@@ -173,3 +173,31 @@ https://github.com/Ntja-Lwandle/part-1
 Author
 Developed by Lwandle Lupuwana
 Academic Project – FigureVault E-Commerce Website
+
+CHANGELOG
+HTML Improvements
+- Corrected navigation across all pages.
+- Improved semantic HTML structure.
+- Added additional content to About page.
+- Added labels and accessibility features to forms.
+
+CSS Improvements
+- Styled About page.
+- Styled Contact page.
+- Styled Product page.
+- Improved typography consistency.
+- Added hover and focus pseudo classes.
+- Improved colour consistency across website.
+
+Responsive Design
+- Added tablet breakpoint (992px).
+- Added mobile breakpoint (768px).
+- Added small-screen breakpoint (480px).
+- Improved navigation responsiveness.
+- Improved product page responsiveness.
+
+User Experience
+- Improved readability.
+- Improved form usability.
+- Improved visual hierarchy.
+- Improved accessibility.
