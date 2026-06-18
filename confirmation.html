@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Order Confirmed</title>
-   <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<heade class="inner-header"r>
+<header class="inner-header"r>
     <div class="container">
         <h1>Confirmation</h1>
         <nav>
@@ -20,13 +20,45 @@
 
     </div>
 </header>
-
+<div id="order-details"></div>
 <div class="container">
+
   <h1>🎉 Order Successful!</h1>
   <p>Thank you for shopping at FigureVault.</p>
 
   <a href="index.html">Back to Home</a>
 </div>
 
+<script src="js/script.js"></script>
+<script>
+const order =
+JSON.parse(localStorage.getItem("lastOrder")) || [];
+
+const details =
+document.getElementById("order-details");
+
+if(details){
+
+    let total = 0;
+    let html = "<h2>Order Details</h2>";
+
+    order.forEach(item => {
+
+        total += item.price * item.qty;
+
+        html += `
+            <p>
+                ${item.name}
+                x${item.qty}
+                - R${item.price * item.qty}
+            </p>
+        `;
+    });
+
+    html += `<h3>Total Paid: R${total}</h3>`;
+
+    details.innerHTML = html;
+}
+</script>
 </body>
 </html>

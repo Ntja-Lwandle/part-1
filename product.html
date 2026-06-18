@@ -3,14 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <title>Product - FigureVault</title>
-  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
 
 <header class="inner-header">
     <div class="container">
+
+
+<button class="menu-btn"
+        onclick="toggleMenu()">
+☰
+</button>
+
         <h1>Products</h1>
-        <nav>
+        <nav id="navMenu">
             <a href="index.html">Home</a>
             <a href="shop.html" class="btn-primary">← Back to Shop</a>
             <a href="product.html"> Products</a>
@@ -21,7 +29,6 @@
 
     </div>
 </header>
-  <!--details about the figurines page-->
 <div class="container product-page">
 
   <div class="product-left">
@@ -30,7 +37,8 @@
   camera-controls
   exposure="1.2"
   shadow-intensity="1"
-  environment-image="neutral">
+  environment-image="neutral"
+  style="width: 100%; height: 500px;">
  </model-viewer>
   </div>
 
@@ -38,17 +46,48 @@
     <h2 id="product-name"></h2>
     <p id="product-description">Premium high-detail collectible.</p>
     <h3 id="product-price"></h3>
-
-    <button id="add-to-cart-btn">Add to Cart</button>
+     <button id="add-to-cart-btn">Add to Cart</button>
   </div>
-  <div class="product-description">
+
+<div class="product-description">
     <ul>This figurine is high-quality material,one of a kind</ul>
     <ul>It is pre painted, 10-inch model,classic</ul>
 </div>
-
 </div>
 
 
+<script src="js/script.js"></script>
+<script>
+const params = new URLSearchParams(window.location.search);
 
+let name = params.get("name");
+let price = Number(params.get("price"));
+let modelFile = params.get("model");
+
+// Fallback product if URL parameters are missing
+if (!name || !price || !modelFile) {
+    name = "Megatron";
+    price = 1800;
+    modelFile = "megatron_tf5.glb";
+}
+
+const model = "models/" + modelFile;
+
+// Get elements
+const nameEl = document.getElementById("product-name");
+const priceEl = document.getElementById("product-price");
+const modelEl = document.getElementById("product-model");
+const btn = document.getElementById("add-to-cart-btn");
+
+// Populate page
+nameEl.textContent = name;
+priceEl.textContent = "R " + price;
+modelEl.src = model;
+
+// Add to cart
+btn.addEventListener("click", () => {
+    addToCart(name, price, model);
+});
+</script>
 </body>
 </html>

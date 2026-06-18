@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FigureVault - Premium Superhero Figurines</title>
-     <link rel="stylesheet" href="CSS/styles.css"> 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+     <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
 </head>
 <body>
 <header>
     <div class="container">
+
+<!--Dropdown Button-->
+<button class="menu-btn"
+        onclick="toggleMenu()">
+☰
+</button>
+
         <h1>FigureVault</h1>
-        <nav>
+
+        <!--Normal Navigation-->
+        <nav id="navMenu">
             <a href="index.html">Home</a>
             <a href="shop.html">Shop</a>
             <a href="product.html"> Products</a>
@@ -21,8 +32,20 @@
         </nav>
 
     </div>
+
+    <!--Seperate Dropdown-->
+    <div id="dropdownMenu">
+
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="product.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Cart</a>
+
+</div>
 </header>
-<!--Home page, preview of catalogue-->
+
  <main>
     <section class="hero">
       <div class="container hero-content">
@@ -46,7 +69,7 @@
         </model-viewer>
         <h3>Megatron  Figurine</h3>
         <p class="price">R 1800.00</p>
-        <button onclick="event.stopPropagation();addToCart('Megatron Figurine', 1000)">Add to Cart</button>
+        <button onclick="event.stopPropagation();addToCart('Megatron Figurine', 1800)">Add to Cart</button>
       </div>
       </a>
 
@@ -94,7 +117,7 @@
     </div>
   </footer>
 
-  
+  <script src="js/script.js"></script>
 
 
 </body>
