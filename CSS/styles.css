@@ -647,6 +647,26 @@ nav a:focus::after {
     }
 }
 
+/* MAP SECTION */
+
+.map-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.map-section h2 {
+    color: #ffc107;
+    margin-bottom: 20px;
+}
+
+#map {
+    height: 450px;
+    width: 100%;
+    border-radius: 20px;
+    border: 3px solid #e50914;
+    box-shadow: 0 0 20px rgba(229,9,20,.4);
+}
+
 /* FOOTER */
 footer {
   background-color: #1c1c1e;
