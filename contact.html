@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>Contact - FigureVault</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet"
+href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 </head>
 <body>
 
@@ -60,10 +62,40 @@
 
 </form>
 </div>
+
+<section class="map-section">
+
+    <h2>Find Our Store</h2>
+
+    <div id="map"></div>
+
+</section>
+  
 <h1> Contact Details:</h1>
 <p>Email:support@FigureVault.com</p>
 <p>Phone:081-340-7188</p>
 
 <script src="js/script.js"></script>
+
+<script>
+
+const map = L.map('map').setView(
+[-33.9249, 18.4241], // Cape Town
+13
+);
+
+L.tileLayer(
+'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+{
+    attribution: '&copy; OpenStreetMap contributors'
+}
+).addTo(map);
+
+L.marker([-33.9249, 18.4241])
+.addTo(map)
+.bindPopup("<b>FigureVault</b><br>Cape Town Store")
+.openPopup();
+
+</script>  
 </body>
 </html>
