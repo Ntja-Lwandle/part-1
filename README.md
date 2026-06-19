@@ -56,6 +56,22 @@ Front-End
 * CSS3
 * JavaScript
 
+### Libraries
+- Google Model Viewer
+
+### Storage
+- Browser Local Storage
+
+### Development Tools
+- Visual Studio Code
+- GitHub
+- GitHub Pages
+
+### SEO Features
+- robots.txt
+- sitemap.xml
+- Semantic HTML structure
+  
 Design Tools & Resources
 * Wireframe.cc
 * Sketchfab
@@ -145,16 +161,50 @@ Estimated Total
 R300K – R1 Million
 
 Folder Structure
+├── index.html
 
-index.html
-products.html
-contact.html
-cart.html
-css/
- *style.css
-js/
-*script.js
-models/
+├── shop.html
+
+├── product.html
+
+├── cart.html
+
+├── checkout.html
+
+├── about.html
+
+├── contact.html
+
+├── site-map.html
+
+├── robots.txt
+
+├── sitemap.xml
+
+├── css/
+
+│ └── styles.css
+
+├── js/
+
+│ └── script.js
+
+├── images/
+
+├── models/
+
+└── README.md
+
+
+## Future Improvements
+
+- User authentication.
+- Payment gateway integration.
+- Product categories.
+- Product reviews and ratings.
+- Wishlist functionality.
+- Admin dashboard.
+- Database integration.
 
 GitHub Repository
 Repository Link:
