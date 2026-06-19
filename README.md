@@ -174,28 +174,70 @@ Author
 Developed by Lwandle Lupuwana
 Academic Project – FigureVault E-Commerce Website
 
-CHANGELOG
-HTML Improvements
-- Corrected navigation across all pages.
-- Improved semantic HTML structure.
-- Added additional content to About page.
-- Added labels and accessibility features to forms.
+### CHANGELOG
+All notable changes made during the development of FigureVault are documented below.
+### User Interface Improvements
+- Redesigned cart page with modern layout and improved styling.
+- Added responsive navigation menu across all pages.
+- Added dropdown menu functionality for mobile devices.
+- Improved header styling and consistency across website pages.
+- Improved checkout page design and user experience.
+- Added responsive layouts for mobile, tablet, and desktop devices.
+- Improved styling for About, Contact, Cart, and Checkout pages.
+- Added hover effects and animations for product cards and buttons.
 
-CSS Improvements
-- Styled About page.
-- Styled Contact page.
-- Styled Product page.
-- Improved typography consistency.
-- Added hover and focus pseudo classes.
-- Improved colour consistency across website.
+### Product Features
+- Implemented interactive 3D product previews using Model Viewer.
+- Added dedicated product details page.
+- Added dynamic product loading using URL parameters.
+- Added product descriptions and specifications.
+- Added product image/model loading functionality.
 
-Responsive Design
-- Added tablet breakpoint (992px).
-- Added mobile breakpoint (768px).
-- Added small-screen breakpoint (480px).
-- Improved navigation responsiveness.
-- Improved product page responsiveness.
+### Shopping Cart System
+- Implemented Add to Cart functionality.
+- Implemented Remove from Cart functionality.
+- Added quantity increase and decrease controls.
+- Added automatic cart total calculations.
+- Added cart counter displayed in navigation bar.
+- Implemented Local Storage for cart persistence.
+- Added dynamic cart updates without requiring page refresh.
 
+### Search Functionality
+- Added product search bar.
+- Implemented real-time product filtering based on user input.
+
+### Checkout System
+- Created checkout page.
+- Added order summary functionality.
+- Implemented form validation.
+- Added order placement confirmation.
+- Added automatic cart clearing after successful order placement.
+
+### Navigation Improvements
+- Added links between all website pages.
+- Added Back to Shop navigation.
+- Improved overall site structure and usability.
+
+### SEO Enhancements
+- Added robots.txt file.
+- Added sitemap.xml file.
+- Improved page titles and semantic HTML structure.
+
+### Accessibility Improvements
+- Added alt text for models and content.
+- Improved keyboard navigation.
+- Improved focus states for buttons and navigation links.
+
+### Performance Improvements
+- Added lazy loading for 3D models.
+- Optimized model rendering.
+- Improved responsive CSS structure.
+- Reduced unnecessary page refreshes.
+
+### Documentation
+- Added README documentation.
+- Added project deployment instructions.
+- Added changelog documentation.
 User Experience
 - Improved readability.
 - Improved form usability.
