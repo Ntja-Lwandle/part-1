@@ -3,38 +3,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>https://yourusername.github.io/FigureVault/index.html</loc>
+<loc>https://github.com/Ntja-Lwandle/part-1/blob/main/index.html</loc>
 <priority>1.0</priority>
 </url>
 
 <url>
-<loc>https://yourusername.github.io/FigureVault/shop.html</loc>
+<loc>https://github.com/Ntja-Lwandle/part-1/blob/main/shop.htmll</loc>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>https://yourusername.github.io/FigureVault/product.html</loc>
+<loc>https://github.com/Ntja-Lwandle/part-1/blob/main/product.html</loc>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>https://yourusername.github.io/FigureVault/cart.html</loc>
+<loc>https://github.com/Ntja-Lwandle/part-1/blob/main/cart.html</loc>
 <priority>0.8</priority>
 </url>
 
 <url>
-<loc>https://yourusername.github.io/FigureVault/checkout.html</loc>
+<loc>https://github.com/Ntja-Lwandle/part-1/blob/main/checkout.html</loc>
 <priority>0.8</priority>
 </url>
 
 <url>
-<loc>https://yourusername.github.io/FigureVault/about.html</loc>
+<loc>https://github.com/Ntja-Lwandle/part-1/blob/main/about.html</loc>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>https://yourusername.github.io/FigureVault/contact.html</loc>
+<loc>https://github.com/Ntja-Lwandle/part-1/blob/main/contact.html</loc>
 <priority>0.7</priority>
+</url>
+
+  <url>
+<loc>https://github.com/Ntja-Lwandle/part-1/blob/main/confirmation.html</loc>
+<priority>0.6</priority>
 </url>
 
 </urlset>
