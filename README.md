@@ -1,5 +1,7 @@
 FigureVault – E-Commerce Figurine Website
 
+https://hilarious-squirrel-90498a.netlify.app/
+
 Project Overview
 FigureVault is a modern e-commerce website designed for collectors and enthusiasts of anime, pop culture, fantasy, and superhero figurines. The platform provides users with a visually engaging online shopping experience where they can browse, explore, and purchase collectible items.
 The website was developed as part of a web development project proposal and focuses on responsive design, user experience, and modern front-end technologies.
